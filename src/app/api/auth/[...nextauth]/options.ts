@@ -110,3 +110,8 @@ GoogleProvider({
 //   adapter: PrismaAdapter(prisma),
 //   providers: [ ... ],
 // };
+
+
+//route
+
+// /app/api/auth/[...nextauth]/route.js
