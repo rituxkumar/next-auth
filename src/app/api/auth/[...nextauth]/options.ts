@@ -100,3 +100,13 @@ GoogleProvider({
 //   return <p>Hello {session.user.email}</p>;
 // }
 
+
+//Database integration
+
+// import { PrismaAdapter } from "@next-auth/prisma-adapter";
+// import { prisma } from "@/lib/prisma";
+
+// export const authOptions = {
+//   adapter: PrismaAdapter(prisma),
+//   providers: [ ... ],
+// };
