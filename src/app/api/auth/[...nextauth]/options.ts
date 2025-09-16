@@ -50,3 +50,53 @@ export const authOptions = {
 
 const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };
+
+
+
+
+
+
+
+// Providers
+
+import GoogleProvider from "next-auth/providers/google";
+
+GoogleProvider({
+  clientId: process.env.GOOGLE_CLIENT_ID,
+  clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+});
+
+
+// Get session 
+
+// import { getServerSession } from "next-auth";
+
+// export default async function Dashboard() {
+//   const session = await getServerSession(); 
+
+//   return (
+//     <div>
+//       {session ? (
+//         <p>Welcome {session.user.name}!</p>
+//       ) : (
+//         <p>Please login first</p>
+//       )}
+//     </div>
+//   );
+// }
+
+
+  // Get session in Client component
+
+
+
+//   "use client";
+// import { useSession } from "next-auth/react";
+
+// export default function Profile() {
+//   const { data: session } = useSession();
+
+//   if (!session) return <p>Not logged in</p>;
+//   return <p>Hello {session.user.email}</p>;
+// }
+
