@@ -115,3 +115,15 @@ GoogleProvider({
 //route
 
 // /app/api/auth/[...nextauth]/route.js
+
+
+
+
+// import GitHubProvider from "next-auth/providers/github";
+
+// providers: [
+//   GitHubProvider({
+//     clientId: process.env.GITHUB_ID,
+//     clientSecret: process.env.GITHUB_SECRET,
+//   }),
+// ],
